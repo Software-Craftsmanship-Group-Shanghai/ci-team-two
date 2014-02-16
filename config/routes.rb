@@ -8,6 +8,8 @@ CITest::Application.routes.draw do
   post 'login' => 'login#login'
   get 'regist' => 'regist#regist'
 
+  post 'regist' => 'regist#do_regist'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -4,6 +4,8 @@ CITest::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
+  #     URL       controller#action
+  post 'login' => 'login#login'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

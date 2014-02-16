@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
     user = self.find_by_email(email)
 
     unless user.nil?
-      if user.password == password
+      if (user.password == password) and user.register_confirmed?
         return true
       end
     end

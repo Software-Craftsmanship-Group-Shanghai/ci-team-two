@@ -11,11 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140216035939) do
+ActiveRecord::Schema.define(version: 20140216060139) do
 
   create_table "users", force: true do |t|
-    t.text "email"
-    t.text "password"
+    t.text    "email"
+    t.text    "password"
+    t.boolean "register_confirmed", default: false
+    t.text    "register_token"
   end
 
 end

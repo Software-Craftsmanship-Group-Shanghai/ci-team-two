@@ -6,6 +6,7 @@ CITest::Application.routes.draw do
   root 'welcome#index'
   #     URL       controller#action
   post 'login' => 'login#login'
+  get 'regist' => 'regist#regist'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

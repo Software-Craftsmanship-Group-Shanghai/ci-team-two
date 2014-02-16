@@ -1,0 +1,13 @@
+<h1>Regist</h1>
+<%= form_tag '/regist' do %>
+  <%= label_tag "Regist E-mail" %>
+  <%= email_field_tag :email %>
+  <br/>
+  <%= label_tag "Password" %>
+  <%= password_field_tag :password %>
+
+
+  <br/>
+  <%= submit_tag "Regist now!" %>
+  <%= @login_message %>
+<% end %>
